@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แอพแปลงหน่วยสาร</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter">
+        <h1>แปลงหน่วยสาร</h1>
+        <input type="number" id="inputValue" placeholder="กรอกค่า" class="input-field">
+        
+        <div>
+            <label for="fromUnit">จาก:</label>
+            <select id="fromUnit">
+                <option value="grams">กรัม</option>
+                <option value="moles">โมล</option>
+                <option value="liters">ลิตร</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="toUnit">เป็น:</label>
+            <select id="toUnit">
+                <option value="grams">กรัม</option>
+                <option value="moles">โมล</option>
+                <option value="liters">ลิตร</option>
+            </select>
+        </div>
+
+        <button onclick="convert()">แปลง</button>
+        
+        <h2>ผลลัพธ์: <span id="result"></span></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
